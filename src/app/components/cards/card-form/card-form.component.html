@@ -1,0 +1,7 @@
+<h2>Demanar pressupost</h2>
+<form [formGroup]="client" (submit)="addClient()">
+    <input type="text" id="client_name" formControlName="name" placeholder="Nom">
+    <input type="text" id="client_phone" formControlName="phone" placeholder="Telefon">
+    <input type="text" id="client_email" formControlName="email" placeholder="Email">
+    <button type="submit">Sol·licitar pressupost</button>
+</form>

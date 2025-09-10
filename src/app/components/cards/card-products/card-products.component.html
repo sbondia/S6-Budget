@@ -1,0 +1,24 @@
+<div>
+    <div>
+        <div>
+            <div><h3>{{product.title}}</h3></div>
+            <div><p>{{product.desc}}</p></div>
+        </div>
+        <p>{{product.price}}€</p>
+        <div>
+            <input type="checkbox" id="add_product" name="vehicle1" value="Bike">
+            <label for="add_product">Afegir</label>
+        </div>
+    </div>
+    @if (product.extra) {
+        @for (extra of product.extra; track $index) {
+            <div>
+                <app-card-modal-info [title]="extra.title" [text]="extra.desc"></app-card-modal-info>
+                <p>{{extra.title}}</p>
+                <button type="button">+</button>
+                <p>count</p>
+                <button type="button">-</button>
+            </div>
+        }
+    }
+</div>
