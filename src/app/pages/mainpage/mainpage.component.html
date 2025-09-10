@@ -1,0 +1,19 @@
+<app-card-banner></app-card-banner>
+
+ @for (product of importProductsService.getAll(); track $index) {
+    <app-card-products [product]="product"></app-card-products>
+}
+
+<div>
+    <h2>Preu pressuposat: {{currentbudgetpricesignal}}€</h2>
+</div>
+
+<app-card-form></app-card-form>
+
+<img src="img/Grunge-Divider5--Arvin61r58.png" alt="separador" style="height: 200px;">
+
+
+<h2>Pressupostos en curs</h2>
+ @for (budget of ; track $index) {
+    <app-card-budgets [budget]="budget"></app-card-budgets>
+}

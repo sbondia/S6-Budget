@@ -1,0 +1,17 @@
+<div>
+    <div>
+        <h3>{{budget.name}}</h3>
+        <p>{{budget.mail}}</p>
+        <p>{{budget.phone}}</p>
+    </div>
+    <div>
+        <p>Serveis contractats:</p>
+        @for (product of budget.products; track $index) {
+            <p>{{product}}</p>
+        }
+    </div>
+    <div>
+        <p>Total:</p>
+        <p>{{budget.price}}€</p>
+    </div>
+</div>

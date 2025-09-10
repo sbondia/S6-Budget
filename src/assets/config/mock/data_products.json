@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Seo",
+        "desc": "Programacio d'una web responsive completa",
+        "price": 300
+    },
+    {
+        "title": "Ads",
+        "desc": "Programacio d'una web responsive completa",
+        "price": 400
+    },
+    {
+        "title": "Web",
+        "desc": "Programacio d'una web responsive completa",
+        "price": 500,
+        "extra": [
+            {
+                "title": "Nombre de pagines",
+                "desc": "Afegeix el nombre de pagines que tindra el teu projecte. El cost de cada pagina es de 30€",
+                "price": 50
+            },
+            {
+                "title": "Nombre de llenguatges",
+                "desc": "Afegeix els llenguatges que tindra el teu projecte. El cost de cada llenguatge es de 30€",
+                "price": 30
+            }
+        ]
+    }
+]
